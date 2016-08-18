@@ -1,0 +1,39 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-4">
+                <img src="{{ asset("/images/quad_build.jpg") }}" class="img-thumbnail">
+            </div>
+            <div class="col-sm-8">
+                <p>
+                    We offer professional build services for all of our products. These builds are done
+                    with care and precision, with the entire focus of one of our team members. Wire lengths
+                    are trimmed to size, and soldered directly in place to  reduce weight. Also, the craft
+                    will be tuned and trimmed prior to shipping, ensuring that you will be able to fly it
+                    without needing to worry about PID tuning. Requests can involve coloring of frame, wire
+                    wrapping, hydrodipping, and other options. For questions, please email us at
+                    <a href="mailto:someone@example.com?Subject=Build%20Service" target="_top">
+                        builds@thissite.com
+                    </a>
+                </p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-4">
+                <img src="{{ asset("/images/filming_service.jpg") }}" class="img-thumbnail">
+            </div>
+            <div class="col-sm-8">
+                <p>
+                    Got a small production that needs aerial shots? Or maybe some real estate that needs
+                    to be advertised? Our team members are trained in operating large filming drones,
+                    capable of carrying serious cameras. This can be an economic solution for stunning
+                    cinematic footage without breaking the bank. Give us a call at 999-999-9999 for more
+                    information.
+                </p>
+            </div>
+        </div>
+    </div>
+    {{ parent() }}
+{% endblock %}
